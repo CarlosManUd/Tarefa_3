@@ -4,7 +4,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author ivansteuerberg
+ * @author carli
  */
 public class Ventana extends javax.swing.JFrame {
 
@@ -49,6 +49,11 @@ public class Ventana extends javax.swing.JFrame {
 
         cajaCurso.setFont(new java.awt.Font("Dialog", 3, 18)); // NOI18N
         cajaCurso.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Dam1", "Dam2", "Asir1", "Asir2" }));
+        cajaCurso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cajaCursoActionPerformed(evt);
+            }
+        });
 
         apelido.setFont(new java.awt.Font("Dialog", 1, 20)); // NOI18N
         apelido.setText("APELIDO");
@@ -193,6 +198,10 @@ public class Ventana extends javax.swing.JFrame {
     
     
     }//GEN-LAST:event_botonBorrarActionPerformed
+
+    private void cajaCursoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cajaCursoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cajaCursoActionPerformed
 
     /**
      * @param args the command line arguments
